@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // khai báo hàm ready để xài cho tiện
+    const ready = callback => {
+        if (document.readyState !== 'loading') callback()
+        else document.addEventListener('DOMContentLoaded', callback)
+    };
+
+    ready(() => {
+        setTimeout(() => {
+            window.location.href = 'https://wishpluss.com/'
+        }, 1000)
+    })
+</script>
+</html>
